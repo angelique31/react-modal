@@ -111,15 +111,15 @@ What props can you add ?
 
 Modal accepts the following props:
 
-isOpen (boolean): The open state of the modal. If true, the modal is open. If false, the modal is closed.
+`isOpen` (boolean): The open state of the modal. If true, the modal is open. If false, the modal is closed.
 
-onClose (function): Function to call when the modal is requested to close. This function should set isOpen to false.
+`onClose` (function): Function to call when the modal is requested to close. This function should set isOpen to false.
 
-title (string): The title of the modal. Displayed at the top of the modal.
+`title` (string): The title of the modal. Displayed at the top of the modal.
 
-buttonLabel (string): The label of the close button. Displayed in the button that closes the modal.
+`buttonLabel` (string): The label of the close button. Displayed in the button that closes the modal.
 
-onButtonClick (function): Function to call when the button inside the modal is clicked.
+`onButtonClick` (function): Function to call when the button inside the modal is clicked.
 
 ## Peer Dependencies
 
