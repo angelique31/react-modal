@@ -2,6 +2,15 @@
 
 "A simple, yet flexible, modal component for React. Easy to use and integrate into any React project. Fully accessible and customizable."
 
+## Table of Contents
+
+- [Installation](#installation)
+- [Basic Usage](#usage)
+- [Advanced Usage Using Modal with a Form](#advanced-usage-using-modal-with-a-form)
+- [Props](#properties)
+- [Peer Dependencies](#peer-dependencies)
+- [License](#license)
+
 ## How to install the Modal
 
 ```jsx
@@ -132,7 +141,7 @@ This component has peer dependencies with React and ReactDOM:
 }
 ```
 
-Ensure these dependencies are met in your project.
+Ensure these dependencies are met in your project.  
 If you have not already installed these dependencies, you can do so by using npm or yarn:
 
 With npm:
@@ -148,9 +157,6 @@ yarn add react react-dom
 
 ```
 
-License;
-MIT;
+## License
 
-```
-
-```
+MIT
