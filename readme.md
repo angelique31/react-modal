@@ -13,6 +13,18 @@
 
 ## How to install the Modal
 
+Before installing the Modal component, ensure you have a `div` element with an id of `modal-root` in your HTML file. This is where the modal content will be rendered.
+
+```jsx
+<!-- dans votre fichier HTML -->
+<body>
+  ...
+  <div id="modal-root"></div>
+</body>
+```
+
+Next, you can install the Modal component using npm:
+
 ```jsx
 npm install @angel1979/react-simple-modal
 ```
@@ -59,7 +71,8 @@ export default App;
 
 ## Advanced Usage: Using Modal with a Form
 
-The `Modal` component can be used in combination with form submission. Here's an example:
+In this example, we're using the modal within a form to add a new employee. When the form is submitted, if all inputs are valid, the modal opens.
+Here's an example:
 
 First, initialize the `isOpen` state for the modal:
 
@@ -120,15 +133,15 @@ What props can you add ?
 
 Modal accepts the following props:
 
-`isOpen` (boolean): The open state of the modal. If true, the modal is open. If false, the modal is closed.
+`isOpen` (boolean, Required): The open state of the modal. If true, the modal is open. If false, the modal is closed.
 
-`onClose` (function): Function to call when the modal is requested to close. This function should set isOpen to false.
+`onClose` (function, Required): Function to call when the modal is requested to close. This function should set isOpen to false.
 
-`title` (string): The title of the modal. Displayed at the top of the modal.
+`title` (string, Optional): The title of the modal. Displayed at the top of the modal.
 
-`buttonLabel` (string): The label of the close button. Displayed in the button that closes the modal.
+`buttonLabel` (string, Optional): The label of the close button. Displayed in the button that closes the modal.
 
-`onButtonClick` (function): Function to call when the button inside the modal is clicked.
+`onButtonClick` (function, Optional): Function to call when the button inside the modal is clicked.
 
 ## Peer Dependencies
 
@@ -141,6 +154,7 @@ This component has peer dependencies with React and ReactDOM:
 }
 ```
 
+These versions are the minimum required versions.
 Ensure these dependencies are met in your project.  
 If you have not already installed these dependencies, you can do so by using npm or yarn:
 
