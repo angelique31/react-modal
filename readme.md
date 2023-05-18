@@ -133,6 +133,24 @@ This component has peer dependencies with React and ReactDOM:
 ```
 
 Ensure these dependencies are met in your project.
+If you have not already installed these dependencies, you can do so by using npm or yarn:
 
-License
-MIT
+With npm:
+
+```jsx
+npm install react react-dom
+```
+
+With yarn:
+
+```jsx
+yarn add react react-dom
+
+```
+
+License;
+MIT;
+
+```
+
+```
