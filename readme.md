@@ -1,6 +1,6 @@
 # Modal Component in React
 
-Un composant de modale simple, mais flexible, pour React. Facile à utiliser et à intégrer dans n'importe quel projet React. Entièrement accessible et personnalisable.
+"A simple, yet flexible, modal component for React. Easy to use and integrate into any React project. Fully accessible and customizable."
 
 ## How to install the Modal
 
@@ -54,13 +54,13 @@ The `Modal` component can be used in combination with form submission. Here's an
 
 First, initialize the `isOpen` state for the modal:
 
-`````jsx
+```jsx
 const [isModalOpen, setIsModalOpen] = useState(false);
 ```
 
 In your form submission handler function, you can open the modal based on certain conditions:
 
-````jsx
+```jsx
 const handleSubmit = (e) => {
   e.preventDefault();
 
@@ -83,11 +83,11 @@ const handleSubmit = (e) => {
 
   setIsModalOpen(true);
 };
-
 ```
+
 Then, define a function to close the modal:
 
-````jsx
+```jsx
 const handleModalClose = () => {
   setIsModalOpen(false);
 };
@@ -95,7 +95,7 @@ const handleModalClose = () => {
 
 Finally, you can use the Modal component within your form and pass these functions as props:
 
-````jsx
+```jsx
 <Modal
   isOpen={isModalOpen}
   onClose={handleModalClose}
@@ -104,7 +104,6 @@ Finally, you can use the Modal component within your form and pass these functio
   onButtonClick={handleModalClose}
 />
 ```
-
 
 ## Properties
 
@@ -122,19 +121,18 @@ buttonLabel (string): The label of the close button. Displayed in the button tha
 
 onButtonClick (function): Function to call when the button inside the modal is clicked.
 
-
 ## Peer Dependencies
 
 This component has peer dependencies with React and ReactDOM:
 
-````jsx
+```jsx
 "peerDependencies": {
 "react": "^18.2.0",
 "react-dom": "^18.2.0"
 }
 ```
+
 Ensure these dependencies are met in your project.
 
 License
 MIT
-`````
