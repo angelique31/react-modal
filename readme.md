@@ -4,6 +4,7 @@
 
 ## Table of Contents
 
+- [ReactDOM.createPortal](#using-reactDOM.createportal)
 - [Installation](#installation)
 - [Basic Usage](#usage)
 - [Advanced Usage Using Modal with a Form](#advanced-usage-using-modal-with-a-form)
@@ -11,12 +12,16 @@
 - [Peer Dependencies](#peer-dependencies)
 - [License](#license)
 
+## Using ReactDOM.createPortal
+
+Our modal component leverages ReactDOM.createPortal to render the modal content. This React feature enables rendering children into a DOM node that exists outside the parent component's DOM hierarchy. This is particularly useful for modal windows, which are typically rendered at the application's root rather than as a direct child of the triggering component. Thanks to ReactDOM.createPortal, our modal can appear above the rest of the application while maintaining the same properties and behaviors as any other React component.
+
 ## How to install the Modal
 
-Before installing the Modal component, ensure you have a `div` element with an id of `modal-root` in your HTML file. This is where the modal content will be rendered.
+Before installing the Modal component, ensure you have a `div` element with an `id` of `modal-root` in your HTML file. This is where the modal content will be rendered.
 
 ```jsx
-<!-- dans votre fichier HTML -->
+<!-- in your HTML file  -->
 <body>
   ...
   <div id="modal-root"></div>
