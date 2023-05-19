@@ -11,6 +11,11 @@ import "./pluginModalStyles.css";
  * and the modal can be dismissed by clicking outside the modal, clicking the close button, or pressing the
  * Escape key. The focus is confined within the modal for better accessibility.
  *
+ *  * Un composant modal conçu pour fournir une interface accessible et conviviale pour présenter du contenu
+ * dans une superposition par-dessus le contenu principal. La modal peut être ouverte ou fermée en modifiant la prop `isOpen`,
+ * et la modal peut être fermée en cliquant en dehors de la modal, en cliquant sur le bouton de fermeture, ou en appuyant sur la
+ * touche Echap. Le focus est confiné à l'intérieur de la modal pour une meilleure accessibilité
+ *
  * @component
  * @param {object} props The properties for the Modal component.
  * @param {string} props.title The title of the modal. Displayed at the top of the modal.
