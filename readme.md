@@ -33,7 +33,8 @@ Before installing the Modal component, ensure you have a `div` element with an `
 Next, you can install the Modal component using npm:
 
 ```jsx
-npm install @angel1979/react-simple-modal
+npm install angel1979-react-simple-modal
+
 ```
 
 ## Usage
@@ -41,14 +42,14 @@ npm install @angel1979/react-simple-modal
 First, import the `Modal` component from the library:
 
 ```jsx
-import Modal from "@angel1979/react-simple-modal";
+import Modal from "angel1979-react-simple-modal";
 ```
 
 Then, use the Modal component within your React component. Here's an example:
 
 ```jsx
 import React, { useState } from "react";
-import Modal from "@angel1979/react-simple-modal";
+import Modal from "angel1979/react-simple-modal";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);

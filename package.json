@@ -1,14 +1,25 @@
 {
-  "name": "@angel1979/react-simple-modal",
-  "version": "1.0.0",
-  "description": "A modal component ",
-  "main": "pluginModal/pluginModal.js",
+  "name": "angel1979-react-simple-modal",
+  "version": "1.0.3",
+  "description": "A simple and flexible modal component for React applications, providing high accessibility and easy integration.",
+  "main": "dist/pluginModal.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel pluginModal -d dist && copy pluginModal\\pluginModalStyles.css dist",
+    "prepublishOnly": "npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angelique31/react-modal"
+  },
+  "homepage": "https://github.com/angelique31/react-modal/blob/master/readme.md",
   "keywords": [
     "react",
-    "modal"
+    "modal",
+    "dialog",
+    "overlay",
+    "popup",
+    "react-component"
   ],
   "author": "angel1979",
   "license": "MIT",
@@ -18,5 +29,12 @@
   },
   "dependencies": {
     "prop-types": "^15.8.1"
-  }
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "@babel/preset-react": "^7.18.6"
+  },
+  "private": false
 }
