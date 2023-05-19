@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
-import "./PluginModalStyles.css";
+import "./pluginModalStyles.css";
 import { useEffect, useRef } from "react";
 
 /**

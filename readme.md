@@ -4,8 +4,8 @@
 
 ## Table of Contents
 
-- [ReactDOM.createPortal](#using-reactDOM.createportal)
-- [Installation](#installation)
+- [ReactDOM.createPortal](#using-reactdomcreateportal)
+- [Installation](#how-to-install-the-modal)
 - [Basic Usage](#usage)
 - [Advanced Usage Using Modal with a Form](#advanced-usage-using-modal-with-a-form)
 - [Props](#properties)
@@ -16,7 +16,7 @@
 
 Our modal component leverages ReactDOM.createPortal to render the modal content. This React feature enables rendering children into a DOM node that exists outside the parent component's DOM hierarchy. This is particularly useful for modal windows, which are typically rendered at the application's root rather than as a direct child of the triggering component. Thanks to ReactDOM.createPortal, our modal can appear above the rest of the application while maintaining the same properties and behaviors as any other React component.
 
-For more information, click here : [creatPortal] https://react.dev/reference/react-dom/createPortal
+For more information, click here : https://react.dev/reference/react-dom/createPortal
 
 ## How to install the Modal
 
@@ -78,8 +78,7 @@ export default App;
 
 ## Advanced Usage: Using Modal with a Form
 
-In this example, we're using the modal within a form to add a new employee. When the form is submitted, if all inputs are valid, the modal opens.
-Here's an example:
+In this example, we're using the modal within a form. When the form is submitted, the modal opens. Here's an example:
 
 First, initialize the `isOpen` state for the modal:
 
@@ -92,23 +91,6 @@ In your form submission handler function, you can open the modal based on certai
 ```jsx
 const handleSubmit = (e) => {
   e.preventDefault();
-
-  const formErrors = validateEmployeeForm(employee);
-  setErrors(formErrors);
-
-  // Check if all error values are empty:
-  if (Object.values(formErrors).some((error) => error !== "")) {
-    // Display error messages
-    setShowErrors(true);
-    return;
-  }
-  // Use addEmployee from context to add the new employee
-  addEmployee(employee);
-  // Use resetEmployee from context to reset employee values
-  resetEmployee();
-
-  // Hide errors when the modal is open
-  setShowErrors(false);
 
   setIsModalOpen(true);
 };
@@ -128,7 +110,7 @@ Finally, you can use the Modal component within your form and pass these functio
 <Modal
   isOpen={isModalOpen}
   onClose={handleModalClose}
-  title="Employee's data have been successfully stored!"
+  title="Action completed!"
   buttonLabel="Close"
   onButtonClick={handleModalClose}
 />
